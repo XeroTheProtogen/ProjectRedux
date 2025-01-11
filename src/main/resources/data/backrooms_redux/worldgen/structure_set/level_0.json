@@ -1,0 +1,12 @@
+{
+  "structures": [
+    {
+      "structure": "backrooms_redux:level_0",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "backrooms_redux:guaranteed_placement",
+    "salt": 1436339892488625
+  }
+}

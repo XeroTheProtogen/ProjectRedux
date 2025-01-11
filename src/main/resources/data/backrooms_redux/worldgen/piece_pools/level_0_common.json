@@ -1,0 +1,8 @@
+{
+  "path": "backrooms_redux:level_0_common",
+  "pieces": [
+    "backrooms_redux:common_piece_1",
+    "backrooms_redux:water_fountain",
+    "backrooms_redux:walls"
+  ]
+}

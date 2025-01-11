@@ -1,0 +1,8 @@
+{
+  "type": "backrooms_redux:level_0",
+  "biomes": [
+    "backrooms_redux:level_0"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}
