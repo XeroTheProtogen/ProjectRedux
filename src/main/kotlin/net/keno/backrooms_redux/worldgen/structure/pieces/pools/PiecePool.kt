@@ -12,7 +12,7 @@ class PiecePool {
     companion object {
         @JvmField
         val codec: Codec<PiecePool> = RecordCodecBuilder.create {instance -> instance.group(
-            Identifier.CODEC.stable().fieldOf("path").forGetter(PiecePool::path),
+            Identifier.CODEC.stable().fieldOf("pool").forGetter(PiecePool::path),
             Identifier.CODEC.stable().listOf().fieldOf("pieces").forGetter{piecePool -> piecePool.toList()}
         ).apply(instance, ::PiecePool)}
     }

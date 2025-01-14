@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper
 import net.keno.backrooms_redux.data.listeners.LevelPieceListener
+import net.keno.backrooms_redux.item.BRItemGroups
 import net.keno.backrooms_redux.worldgen.structure.BRStructureTypes
 import net.keno.backrooms_redux.worldgen.structure.BRStructures
 import net.keno.backrooms_redux.worldgen.structure.pieces.BRStructurePieces
@@ -33,6 +34,8 @@ object BackroomsRedux : ModInitializer {
 		BRStructurePieces.init()
 		BRStructureTypes.init()
 		BRStructures.init()
+		BRCommonRegistry.init()
+		BRItemGroups.init()
 	}
 
 	fun modLoc(path: String): Identifier {

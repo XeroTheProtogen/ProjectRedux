@@ -1,5 +1,6 @@
 package net.keno.backrooms_redux.worldgen.structure.generator
 
+import net.keno.backrooms_redux.BackroomsRedux
 import net.keno.backrooms_redux.worldgen.structure.pieces.BRStructurePieces
 import net.keno.backrooms_redux.worldgen.structure.pieces.pools.LevelPiecePools
 import net.keno.backrooms_redux.worldgen.structure.pieces.pools.PiecePool
@@ -22,8 +23,8 @@ object Level0Generator {
         holder.addPiece(getPiece(piecePool!!, structureTemplateManager, pos, rotation, random))
     }
 
-    fun getPiece(pool: PiecePool, structureTemplateManager: StructureTemplateManager,
-                 pos: BlockPos, rotation: BlockRotation, random: Random): Piece {
+    private fun getPiece(pool: PiecePool, structureTemplateManager: StructureTemplateManager,
+                         pos: BlockPos, rotation: BlockRotation, random: Random): Piece {
         return Piece(structureTemplateManager, 0, pool.getRandomPiece(random),
             pos, rotation, random)
     }
@@ -48,7 +49,6 @@ object Level0Generator {
         override fun writeNbt(context: StructureContext?, nbt: NbtCompound?) {
             super.writeNbt(context, nbt)
             nbt!!.putString("Rot", placementData.rotation.name)
-            nbt.putString("Mir", placementData.mirror.name)
         }
 
         override fun handleMetadata(
@@ -58,8 +58,7 @@ object Level0Generator {
             random: Random?,
             boundingBox: BlockBox?
         ) {
+
         }
-
-
     }
 }

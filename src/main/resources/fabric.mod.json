@@ -23,7 +23,7 @@
 		],
 		"fabric-datagen": [
 			{
-				"value": "net.keno.backrooms_redux.BackroomsReduxDataGenerator",
+				"value": "net.keno.backrooms_redux.data.BackroomsReduxDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
